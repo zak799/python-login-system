@@ -10,7 +10,7 @@ root.resizable(0, 0)
 
 
 
-def wund():
+def wind():
 	username = "admin"
 	password = "12345"
 	if entry.get() == username and entry1.get() == password:
@@ -43,7 +43,7 @@ label.pack(pady=12)
 entry = customtkinter.CTkEntry(master=frame, width=300, height=50, placeholder_text="Username", font=("E-SQUARE", 25), border_color=("#FFB300"))
 entry1 = customtkinter.CTkEntry(master=frame, width=300, height=50, placeholder_text="Password", font=("E-SQUARE", 25), border_color=("#FFB300"))
 
-button1 = customtkinter.CTkButton(master=frame, width=150, height=25, text="Login", font=("E-SQUARE", 25), fg_color=("#FFB300"), text_color=("#363636"), command=wund)
+button1 = customtkinter.CTkButton(master=frame, width=150, height=25, text="Login", font=("E-SQUARE", 25), fg_color=("#FFB300"), text_color=("#363636"), command=wind)
 button2 = customtkinter.CTkButton(master=frame, width=150, height=25, text="Forgot Password/Username? Click here", font=("E-SQUARE", 15), fg_color=("transparent"), text_color=("#FFB300"))
 
 entry.pack(pady=20)
