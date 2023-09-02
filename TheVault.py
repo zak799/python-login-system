@@ -1,6 +1,6 @@
 import customtkinter
-import tkinter.messagebox as tkmb
-from tkinter import filedialog
+import tkinter.messagebox as tkmb  
+from tkinter import filedialog    
 from tkinter import *
 
 root = customtkinter.CTk()
@@ -11,8 +11,8 @@ root.resizable(0, 0)
 
 
 def wind():
-	username = "admin"
-	password = "12345"
+	username = "admin" # REMEMBER THIS IS THE MOST INSECURE WAY TO STORE DETAILS! USE AN SQL SOLUTION FOR THE BEST PROTECTION OF DETAILS; PYSQLITE
+	password = "12345" # REMEMBER THIS IS THE MOST INSECURE WAY TO STORE DETAILS! USE AN SQL SOLUTION FOR THE BEST PROTECTION OF DETAILS; PYSQLITE
 	if entry.get() == username and entry1.get() == password:
 		tkmb.showinfo(title="Login Successful",message="You have logged in Successfully")
 		root.destroy()
