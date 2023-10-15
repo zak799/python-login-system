@@ -1,6 +1,5 @@
 import customtkinter
-import tkinter.messagebox as tkmb  
-from tkinter import filedialog    
+import tkinter.messagebox as tkmb   
 from tkinter import *
 
 root = customtkinter.CTk()
@@ -18,11 +17,11 @@ def wind():
 		root.destroy()
 		root2 = customtkinter.CTk()
 		root2.geometry("700x600")
-		root2.title("Vault")
+		root2.title("My App")
 		###- MAIN APP FUNCTIONS  -###
 		frame_main = customtkinter.CTkFrame(master=root2)
 		frame_main.pack(pady=35, padx=35, fill="both", expand=True)
-		label_main = customtkinter.CTkLabel(master=frame_main, text="The Vault", font=("E-SQUARE", 50),  text_color=("#FFB300"))
+		label_main = customtkinter.CTkLabel(master=frame_main, text="My App", font=("E-SQUARE", 50),  text_color=("#FFB300"))
 		label_main.pack(pady=12)
 
 		
